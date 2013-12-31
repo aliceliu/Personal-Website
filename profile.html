@@ -11,6 +11,12 @@
 	  	}
 	  	p {
 	  		color:white;
+	  		background: rgba(83, 75, 79, 0.2);
+			font-size: 100px;
+			text-align: left;
+			margin-right: 120px;
+			padding: 40px;
+			height: 460px;
 	  	}
 		
 		h1 {
@@ -62,7 +68,7 @@
 			
 		}
 
-		#profile-picture {
+		#about img {
 			background: rgba(83, 75, 79, 0.2);
 			opacity:0.8;
 			float: left;
@@ -70,15 +76,23 @@
 			border-radius: 2em;
 		}
 
-		#about-text {
+		#about p {
 			background: rgba(83, 75, 79, 0.2);
-			color: white;
-			font-size: 50px;
+			font-size: 100px;
 			font-family: "Kranky";
 			text-align: left;
 			margin-right: 120px;
 			padding: 40px;
 			height: 460px;
+		}
+
+		#project p {
+
+		}
+
+		#links img {
+			width: 200px;
+			height: 200px;
 		}
 
 		.divider {
@@ -95,9 +109,9 @@
 <body>
 	<div id="nav">
         <ul>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Links</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/#links">Links</a></li>
             <li><a href="/static/AliceJiaQi_Liu_resume.pdf">Resume</a></li>
         </ul>
 	</div>
@@ -106,15 +120,27 @@
     
     <div class="divider"></div>
 
-    <div>
-    	<img src="static/cssi photo.jpg" id="profile-picture">
-    	<p id="about-text"> I am a sophomore studying computer science at UC Berkeley.</p>
+    <div id="about">
+    	<img src="static/me.jpg" alt="alice">
+    	<p> &lt;- This is me. </p>
     </div>
 
-    <img src="/static/arrow.png" id="arrow" >
+    <div class="divider"></div>
+
+    <div id="projects">
+    	<p> Coming Soon </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="links">
+	    <a href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
+	    <a href="https://www.linkedin.com/pub/alice-liu/38/989/837/"><img src="static/linkedin.png" alt="linkedin"></a>
+	</div>
+
+    <img src="/static/arrow.png" alt="arrow" id="arrow">
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script type="text/javascript" src=""></script>
     <script type="text/javascript">
     	function Main() {
     		
