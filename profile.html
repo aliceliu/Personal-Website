@@ -25,6 +25,7 @@
 			color: white;
 			font-weight: bold;
 			margin-left: 40px;
+			text-align: left;
 		}
 
 		ul {
@@ -56,6 +57,7 @@
 		    float: right;
 		    position: fixed;
 		    right: 0px;
+		    border-radius: 1.5em;
 		}
 
 		#arrow {
@@ -116,9 +118,13 @@
         </ul>
 	</div>
 
-	<h1>Alice<br>&nbsp;Jia Qi<br>&nbsp; &nbsp; Liu</h1>
+	<div id="name">
+		<h1 data-0="transform[bounce]:rotate(0deg)" data-500="transform[bounce]:rotate(-20deg);">Alice</h1>
+		<h1 data-450="transform[bounce]:rotate(0deg)" data-950="transform[bounce]:rotate(20deg);">&nbsp;Jia Qi</h1>
+		<h1 data-850="margin-top:-300px;" data-1050="margin-top:0px;">&nbsp; &nbsp; Liu</h1>
+	</div>
     
-    <div class="divider"></div>
+    <div data-1150="margin-top:-320px;" data-top="margin-top:0px;" class="divider"></div>
 
     <div id="about">
     	<img src="static/me.jpg" alt="alice">
@@ -141,9 +147,10 @@
     <img src="/static/arrow.png" alt="arrow" id="arrow">
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/skrollr.min.js"></script>
     <script type="text/javascript">
     	function Main() {
-    		
+    		 var s = skrollr.init();
         };
         
         $(document).ready(Main);
