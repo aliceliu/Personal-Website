@@ -7,8 +7,8 @@
 	    body { 
 	  		background-image: url(/static/wood.jpg);
 	  		background-attachment: scroll;
-
 	  	}
+
 	  	p {
 	  		color:white;
 	  		background: rgba(83, 75, 79, 0.2);
@@ -52,12 +52,13 @@
 		#nav {
 		    background: rgba(0, 0, 0, 0.6);
 		    height: 320px;
-		    width: 120px;
+		    width: 140px;
 		    text-align: center;
 		    float: right;
 		    position: fixed;
 		    right: 0px;
-		    border-radius: 1.5em;
+		    border-top-left-radius: 1.5em;
+		    border-bottom-left-radius: 1.5em;
 		}
 
 		#arrow {
@@ -78,11 +79,10 @@
 		}
 
 		#about p {
-			font-size: 100px;
 			font-family: "Kranky";
+			font-size: 140px;
 			text-align: left;
 			margin-right: 120px;
-			padding: 40px;
 			height: 460px;
 		}
 
@@ -109,9 +109,9 @@
 <body>
 	<div id="nav">
         <ul>
-            <li><a href="/#about">About Me</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#links">Links</a></li>
+            <li><a data-anchor-target="#about" data-bottom-top="margin-right:0px" data-top="margin-right:30px" data-top-bottom="margin-right:0px" href="/#about">About Me</a></li>
+            <li><a a data-anchor-target="#projects" data-bottom-top="margin-right:0px" data-top="margin-right:30px" data-top-bottom="margin-right:0px" href="/#projects">Projects</a></li>
+            <li><a a data-anchor-target="#links" data-bottom-top="margin-right:0px" data-top="margin-right:30px" href="/#links">Links</a></li>
             <li><a href="/static/AliceJiaQi_Liu_resume.pdf">Resume</a></li>
         </ul>
 	</div>
@@ -122,11 +122,11 @@
 		<h1 data-850="margin-top:-300px;" data-1050="margin-top:0px;">&nbsp; &nbsp; Liu</h1>
 	</div>
     
-    <div data-1150="margin-top:-320px;" data-top="margin-top:0px;" class="divider"></div>
+    <div data-1150="margin-top:-300px;" data-top="margin-top:0px;" class="divider"></div>
 
-    <div id="about" data-top="padding-left:0px;" data-1100="padding-left:1000px;">
+    <div id="about" data-bottom="padding-left:800px;" data--100-bottom="padding-left:0px; transform:rotate(0deg);" data--500-bottom="transform:rotate(-90deg); transform-origin:bottom left" data-top="margin-right:100px;">
     	<img src="static/me.jpg" alt="alice">
-    	<p> &lt;- This is me. </p>
+    	<p data-bottom="opacity:0;" data--100-bottom="opacity:1;"> &lt;- This is me. </p>
     </div>
 
     <div class="divider"></div>
@@ -138,7 +138,7 @@
     <div class="divider"></div>
 
     <div id="links">
-	    <a data-bottom="margin-right:900px;" data--200-bottom="margin-right:0px;" href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
+	    <a data-bottom-top="margin-right:900px;" data-200-top="margin-right:0px;" href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
 	    <a href="https://www.linkedin.com/pub/alice-liu/38/989/837/"><img src="static/linkedin.png" alt="linkedin"></a>
 	</div>
 
