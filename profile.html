@@ -31,6 +31,7 @@
 
 		h2 {
 			font-size: 150px;
+			color: rgba(220,255,150,0.9);
 		}
 
 		a {
@@ -83,22 +84,25 @@
 			opacity:0.8;
 			float: left;
 			margin: 50px;
+			border: 10px solid;
 			border-radius: 2em;
+			border-color: rgba(224,255,255,0.9);
 		}
 
 		#about p {
 			font-family: "Kranky";
 			font-size: 100px;
 			text-align: left;
-			margin-right: 120px;
 			height: 550px;
 			background: rgba(83, 75, 79, 0.2);
+
 		}
 
 		#projects a {
 			text-decoration: none;
 			font-family: "Pompiere";
 			font-size: 100px;
+			color: rgba(255,165,0,0.9);
 		}
 
 		#projects p {
@@ -119,6 +123,7 @@
 			text-decoration: none;
 			font-size: 80px;
 			text-align: center;
+			color: rgba(255,192,203,0.9);
 		}
 
 		#experience p {
@@ -145,7 +150,6 @@
 		}
 
 		#links a {
-			color: white;
 			font-family: "Nixie One";
 			font-size: 100px;
 			text-decoration: none;
@@ -183,18 +187,18 @@
 
     <div id="about">
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> About Me </h2>
-    	<p data-bottom-top="padding-left:1000px;" data-bottom="padding-left:0px; opacity:1;" data-bottom-top="opacity:0;"> <img src="static/me.jpg" alt="alice"> &lt;- This is me. </p>
+    	<p data-bottom-top="transform:translateX(10em);" data-bottom="transform:translateX(0em); opacity:1;" data-bottom-top="opacity:0;"> <img src="static/me.jpg" alt="alice"> &lt;- This is me. </p>
     </div>
 
     <div class="divider"></div>
 
     <div id="projects">
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Projects </h2>
-    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top left;" data-top-bottom="opacity:0; transform:rotate(180deg);">
+    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top left;" data-top-bottom="opacity:0; transform:rotate(120deg);">
     		<a href="http://random-karaoke.appspot.com" target="_blank"> ~Random Karaoke~ </a>
     		a karaoke player that allows users to watch random karaoke videos from YouTube side by side with the	originals.
     	</p>
-    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top right;" data-top-bottom="opacity:0; transform:rotate(-180deg);">
+    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top right;" data-top-bottom="opacity:0; transform:rotate(-120deg);">
     		<a href="http://random-dancing.appspot.com" target="_blank"> ~Random Dancing~ </a>
     		a web application that randomly plays Youtube playlists to make sure I get up and dance every once awhile.
     	</p>
@@ -204,18 +208,18 @@
 
     <div id="experience">
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Experience </h2>
-    	<div>
+    	<div data-top="opacity:1; position:relative; bottom:0px" data-top-bottom="opacity:0; position:relative; bottom:-200px">
     		<h3><a href="http://www.google.com/edu/programs/student-ambassador-program/" target="_blank"> -Google Student Ambassador- </a></h3>
     		<p>
     		The goal of this role is to act as a liason between UC Berkeley students and Google by organizing events on campus.	Check out the <a href="http://gplus.to/googleatberkeley/" target="_blank">G+</a> and <a href="http://www.facebook.com/googleatberkeley" target="_blank">Facebook</a> page of the student organization I created.
     		</p>
     	</div>
-    	<div>
+    	<div data-top="opacity:1; position:relative; bottom:0px" data-top-bottom="opacity:0; position:relative; bottom:-200px">
     		<h3><a href="http://www.google.com/intl/tur/jobs/students/proscho/programs/uscanada/fep/" target="_blank"> -Google FEP Intern- </a></h3>
     		<p>As a freshmen engineering practicum intern at Google, I worked on writing a testing framework that would automate functional testing of the <a href="https://itunes.apple.com/us/app/google-search/id284815942?mt=8" target="_blank">Google Search App</a> on iOS. The components I focused on were SSO, reminders, apps and settings.
     		</p>
     	</div>
-    	<div>
+    	<div data-top="opacity:1; position:relative; bottom:0px" data-top-bottom="opacity:0; position:relative; bottom:-200px">
     		<h3><a href="http://www.google.com/edu/programs/computer-science-summer-institute-cssi/" target="_blank"> -Google CSSI- </a></h3>
     		<p>
     		Computer Science Summer Institute is where I learned how to build web applications using Google App Engine. The <a href="" target="_blank">Google Doodle</a> my team created for the program's final project was voted People's Choice Award by Googlers! If you want to learn more about my experience at CSSI, check out this <a href="http://googleforstudents.blogspot.com/2013/04/my-summer-google-computer-science.html" target="_blank">blog post</a> I wrote.
@@ -229,7 +233,7 @@
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Links </h2>
 	    <p>
 	    	<a data-bottom-top="margin-right:150px;" data-200-top="margin-right:0px;" href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
-	    	<a data-200-top="position:relative; bottom:0px;" data-top="position:relative; bottom:-600px;" href="/static/AliceJiaQi_Liu_resume.pdf">&gt;Resume&lt;</a>
+	    	<a data-200-top="color:rgba(255,255,255,0.9); position:relative; bottom:0px;" data-top="color:rgba(135,206,235,0.9); position:relative; bottom:-600px;" href="/static/AliceJiaQi_Liu_resume.pdf">&gt;Resume&lt;</a>
 	    	<a data-bottom-top="margin-left:150px;" data-200-top="margin-left:0px;" href="https://www.linkedin.com/pub/alice-liu/38/989/837/"><img src="static/linkedin.png" alt="linkedin"></a>
 	    </p>
 	</div>
