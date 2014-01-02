@@ -2,31 +2,39 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Sue+Ellen+Francisco|Kranky|Coming+Soon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Sue+Ellen+Francisco|Kranky|Coming+Soon|Pompiere|Josefin+Slab|Dosis' rel='stylesheet' type='text/css'>
     <style>
 	    body { 
 	  		background-image: url(/static/wood.jpg);
 	  		background-attachment: scroll;
-	  		margin-bottom: -500px;
 	  	}
 
 	  	p {
+	  		font-size: 50px;
 	  		color:white;
-	  		background: rgba(83, 75, 79, 0.2);
-			font-size: 100px;
-			text-align: left;
-			margin-right: 120px;
-			padding: 40px;
-			height: 460px;
+			text-align: center;
+			margin-right: 150px;
 	  	}
 		
-		h1 {
+		h1, h2 {
 			font-family: "Nixie One";
-			font-size: 370px;
 			color: white;
-			font-weight: bold;
 			padding-left: 50px;
 			text-align: left;
+		}
+
+		h1 {
+			
+			font-size: 370px;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-size: 150px;
+		}
+
+		a {
+			color: white;
 		}
 
 		ul {
@@ -41,13 +49,12 @@
 		    text-decoration: none;
 		    font-family: "Sue Ellen Francisco";
 			width: 120px;
-			color: white;
 			font-size: 38px;
 			float: right;
 		}
 
 		div {
-			text-align: center;
+			text-align: left;
 		}
 
 		#nav {
@@ -81,18 +88,55 @@
 
 		#about p {
 			font-family: "Kranky";
-			font-size: 140px;
+			font-size: 100px;
 			text-align: left;
 			margin-right: 120px;
-			height: 460px;
+			height: 550px;
+			background: rgba(83, 75, 79, 0.2);
+		}
+
+		#projects a {
+			text-decoration: none;
+			font-family: "Pompiere";
+			font-size: 100px;
 		}
 
 		#projects p {
 			font-family: "Coming Soon";
+			text-align: left;
+			background: rgba(83, 75, 79, 0.4);
+			height: 300px;
+		}
+
+		#experience h3 {
+			font-family: "Dosis";
+			text-align: center;
+			margin-right: 100px;
+			padding-top: 50px;
+		}
+
+		#experience h3 a {
+			text-decoration: none;
+			font-size: 80px;
+			text-align: center;
 		}
 
 		#experience p {
-			font-family: "Coming Soon";
+			font-family: "Josefin Slab";
+			line-height: 1.2em;
+			height: 400px;
+		}
+
+		#experience div {
+			background: rgba(83, 75, 79, 0.2);
+		}
+
+		#links {
+			text-align: center;
+		}
+
+		#links p {
+			margin-right: 100px;
 		}
 
 		#links img {
@@ -103,7 +147,8 @@
 		#links a {
 			color: white;
 			font-family: "Nixie One";
-			font-size: 140px;
+			font-size: 100px;
+			text-decoration: none;
 		}
 
 		.divider {
@@ -124,6 +169,7 @@
             <li><a data-anchor-target="#projects" data-bottom-top="margin-right:0px" data-top="margin-right:35px" data-top-bottom="margin-right:0px" href="/#projects">Projects</a></li>
             <li><a data-anchor-target="#experience" data-bottom-top="margin-right:0px" data-top="margin-right:20px" data-top-bottom="margin-right:0px" href="/#experience">Experience</a></li>
             <li><a data-anchor-target="#links" data-bottom-top="margin-right:0px" data-top="margin-right:50px" href="/#links">Links</a></li>
+            <img src="/static/arrow.png" alt="arrow" id="arrow">
         </ul>
 	</div>
 
@@ -135,39 +181,80 @@
     
     <div data-1150="margin-top:-300px;" data-top="margin-top:0px;" class="divider"></div>
 
-    <div id="about" data-1500="padding-left:1000px;" data-2000="padding-left:0px; transform:rotate(0deg);" data-2500="transform:rotate(-3deg); transform-origin:bottom left; position:relative; bottom:0px;" data-2510="transform:rotate(0deg); position:relative; bottom:-150px;">
-    	<img src="static/me.jpg" alt="alice">
-    	<p data-bottom-top="opacity:0;" data-bottom="opacity:1;"> &lt;- This is me. </p>
+    <div id="about">
+    	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> About Me </h2>
+    	<p data-bottom-top="padding-left:1000px;" data-bottom="padding-left:0px; opacity:1;" data-bottom-top="opacity:0;"> <img src="static/me.jpg" alt="alice"> &lt;- This is me. </p>
     </div>
 
     <div class="divider"></div>
 
     <div id="projects">
-    	<p> Coming Soon </p>
+    	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Projects </h2>
+    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top left;" data-top-bottom="opacity:0; transform:rotate(180deg);">
+    		<a href="http://random-karaoke.appspot.com" target="_blank"> ~Random Karaoke~ </a>
+    		a karaoke player that allows users to watch random karaoke videos from YouTube side by side with the	originals.
+    	</p>
+    	<p data-top="opacity:1; transform:rotate(0deg); transform-origin:top right;" data-top-bottom="opacity:0; transform:rotate(-180deg);">
+    		<a href="http://random-dancing.appspot.com" target="_blank"> ~Random Dancing~ </a>
+    		a web application that randomly plays Youtube playlists to make sure I get up and dance every once awhile.
+    	</p>
     </div>
 
     <div class="divider"></div>
 
     <div id="experience">
-    	<p> Coming Soon </p>
+    	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Experience </h2>
+    	<div>
+    		<h3><a href="http://www.google.com/edu/programs/student-ambassador-program/" target="_blank"> -Google Student Ambassador- </a></h3>
+    		<p>
+    		The goal of this role is to act as a liason between UC Berkeley students and Google by organizing events on campus.	Check out the <a href="http://gplus.to/googleatberkeley/" target="_blank">G+</a> and <a href="http://www.facebook.com/googleatberkeley" target="_blank">Facebook</a> page of the student organization I created.
+    		</p>
+    	</div>
+    	<div>
+    		<h3><a href="http://www.google.com/intl/tur/jobs/students/proscho/programs/uscanada/fep/" target="_blank"> -Google FEP Intern- </a></h3>
+    		<p>As a freshmen engineering practicum intern at Google, I worked on writing a testing framework that would automate functional testing of the <a href="https://itunes.apple.com/us/app/google-search/id284815942?mt=8" target="_blank">Google Search App</a> on iOS. The components I focused on were SSO, reminders, apps and settings.
+    		</p>
+    	</div>
+    	<div>
+    		<h3><a href="http://www.google.com/edu/programs/computer-science-summer-institute-cssi/" target="_blank"> -Google CSSI- </a></h3>
+    		<p>
+    		Computer Science Summer Institute is where I learned how to build web applications using Google App Engine. The <a href="" target="_blank">Google Doodle</a> my team created for the program's final project was voted People's Choice Award by Googlers! If you want to learn more about my experience at CSSI, check out this <a href="http://googleforstudents.blogspot.com/2013/04/my-summer-google-computer-science.html" target="_blank">blog post</a> I wrote.
+    		</p>
+    	</div>
     </div>
 
     <div class="divider"></div>
 
     <div id="links">
-	    <a data-bottom-top="margin-right:150px;" data-200-top="margin-right:0px;" href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
-	    <a data-200-top="position:relative; bottom:0px;" data-top="position:relative; bottom:-500px;" href="/static/AliceJiaQi_Liu_resume.pdf">Resume</a>
-	    <a data-bottom-top="margin-left:150px;" data-200-top="margin-left:0px;" href="https://www.linkedin.com/pub/alice-liu/38/989/837/"><img src="static/linkedin.png" alt="linkedin"></a>
+    	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> Links </h2>
+	    <p>
+	    	<a data-bottom-top="margin-right:150px;" data-200-top="margin-right:0px;" href="https://github.com/aliceliu/"><img src="static/github.png" alt="github"></a>
+	    	<a data-200-top="position:relative; bottom:0px;" data-top="position:relative; bottom:-600px;" href="/static/AliceJiaQi_Liu_resume.pdf">&gt;Resume&lt;</a>
+	    	<a data-bottom-top="margin-left:150px;" data-200-top="margin-left:0px;" href="https://www.linkedin.com/pub/alice-liu/38/989/837/"><img src="static/linkedin.png" alt="linkedin"></a>
+	    </p>
 	</div>
 
-    <img src="/static/arrow.png" alt="arrow" id="arrow">
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="/static/skrollr.min.js"></script>
     <script type="text/javascript">
+    	function resizeMenu() {
+    		bottomPos = $(window).height()/4;
+    		$("#nav").css({bottom: bottomPos});
+    	}
+
     	function Main() {
-    		 var s = skrollr.init();
-        };
+    		var s = skrollr.init();
+    		$(window).resize(function() {
+    			resizeMenu();
+    		});
+    		
+    		$(window).scroll(function() {
+   				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+       				alert("bottom!");
+   				}
+			});
+        }
         
         $(document).ready(Main);
     	
