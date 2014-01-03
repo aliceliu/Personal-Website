@@ -10,7 +10,7 @@
 	  	}
 
 	  	p {
-	  		font-size: 50px;
+	  		font-size: 300%;
 	  		color:white;
 			text-align: center;
 			margin-right: 150px;
@@ -23,12 +23,12 @@
 		}
 
 		h1 {
-			font-size: 370px;
+			font-size: 2300%;
 			color: white;
 		}
 
 		h2 {
-			font-size: 120px;
+			font-size: 750%;
 			color: rgba(220,255,150,0.9);
 		}
 
@@ -44,7 +44,7 @@
 		li a {
 		    font-family: "Sue Ellen Francisco";
 			width: 120px;
-			font-size: 38px;
+			font-size: 240%;
 			float: right;
 		}
 
@@ -70,20 +70,20 @@
 			border-color: rgba(224,255,255,0.9);
 		}
 
-		#about p, #projects p, #experience {
+		#about p, #projects p, #experience div {
 			background: rgba(83, 75, 79, 0.2);
 			text-align: left;
 		}
 
 		#about p {
 			font-family: "Kranky";
-			font-size: 80px;
+			font-size: 500%;
 			height: 550px;
 		}
 
 		#projects a {
 			font-family: "Pompiere";
-			font-size: 100px;
+			font-size: 200%;
 			color: rgba(255,165,0,0.9);
 		}
 
@@ -92,7 +92,7 @@
 			height: 300px;
 		}
 
-		#experience {
+		#experience div {
 			text-align: center;
 		}
 
@@ -104,7 +104,7 @@
 
 		#experience h3 a {
 			text-decoration: none;
-			font-size: 80px;
+			font-size: 500%;
 			color: rgba(255,192,203,0.9);
 		}
 
@@ -129,7 +129,7 @@
 
 		#links a {
 			font-family: "Nixie One";
-			font-size: 100px;
+			font-size: 200%;
 		}
 
 		.arrow {
@@ -165,7 +165,7 @@
 	</div>
 
 	<div id="name">
-		<h1 data-0="transform[bounce]:rotate(0deg)" data-500="transform[bounce]:rotate(-20deg);">Alice</h1>
+		<h1 data-0="transform[bounce]:rotate(0deg)" data-500="transform[bounce]:rotate(-20deg);">Al<b>i</b>ce</h1>
 		<h1 data-450="transform[bounce]:rotate(0deg)" data-950="transform[bounce]:rotate(20deg);">&nbsp;Jia Qi</h1>
 		<h1 data-850="margin-top:-300px;" data-1050="margin-top:0px;">&nbsp; &nbsp; Liu</h1>
 	</div>
@@ -175,8 +175,10 @@
     <div id="about">
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> About Me </h2>
     	<p data-bottom-top="transform:translateX(30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> <img src="static/me.jpg" alt="alice"> &lt;- This is me. </p>
-    	<p data-bottom-top="transform:translateX(-30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(30em)"> Since a picture is worth a thousand words... </p>
-    	<p data-bottom-top="transform:translateX(30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> I'm done introducing myself :D </p>
+    	<p data-bottom-top="transform:translateX(-30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(30em)"> I built this without wearing my glasses, so excuse the <u>cool</u>ossal font. </p>
+    	<p data-bottom-top="transform:translateX(30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> <u>See</u> what eye did there? </p>
+    	<p data-bottom-top="transform:translateX(-30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(30em)"> If you would like to contact me... </p>
+    	<p data-bottom-top="transform:translateX(30em);" data-bottom="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> You might want to look into my i. </p>
     </div>
 
     <div class="divider"></div>
@@ -244,6 +246,10 @@
 
     		$(window).resize(function() {
     			repositionMenu();
+    		});
+
+    		$("b").click(function() {
+    			window.location = "static/AliceJiaQi_Liu_resume.pdf"
     		});
 
     		$("#up").click(function() {
