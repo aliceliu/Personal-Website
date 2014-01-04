@@ -7,6 +7,13 @@
 	    body { 
 	  		background-image: url(/static/wood.jpg);
 	  		background-attachment: scroll;
+	  		overflow-x: hidden;
+	  		width: 100%;
+	  	}
+
+	  	html {
+	  		overflow-x: hidden;
+	  		width: 100%;
 	  	}
 
 	  	p {
@@ -90,7 +97,6 @@
 
 		#projects p {
 			font-family: "Coming Soon";
-			height: 300px;
 		}
 
 		#experience div {
@@ -100,7 +106,7 @@
 		#experience h3 {
 			font-family: "Dosis";
 			margin-right: 10%;
-			padding-top: 50px;
+			padding-top: 5%;
 		}
 
 		#experience h3 a {
@@ -112,7 +118,7 @@
 		#experience p {
 			font-family: "Josefin Slab";
 			line-height: 1.2em;
-			height: 400px;
+			padding-bottom: 8%;
 		}
 
 		#links {
@@ -244,12 +250,14 @@
     	function Main() {
     		var s = skrollr.init();
 
+    		repositionMenu();
+
     		$(window).resize(function() {
     			repositionMenu();
     		});
 
     		$("b").click(function() {
-    			window.location = "static/AliceJiaQi_Liu_resume.pdf"
+    			window.location = "static/AliceJiaQi_Liu_resume.pdf";
     		});
 
     		$("#up").click(function() {
