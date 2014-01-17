@@ -34,6 +34,15 @@
 			color: white;
 		}
 
+		@media screen and (max-device-width : 480px) {
+			h1 {
+				font-size: 1600%;
+			}
+			#nav, #up {
+				display: none;
+			}
+		}
+
 		h2 {
 			font-size: 750%;
 			color: rgba(220,255,150,0.9);
@@ -74,11 +83,11 @@
 			float: left;
 			margin: 3%;
 			border: 10px solid;
-			border-radius: 2em;
+			border-radius: 3em;
 			border-color: rgba(224,255,255,0.9);
 		}
 
-		#about p, #projects p, #experience div {
+		#about div, #projects p, #experience div {
 			background: rgba(83, 75, 79, 0.2);
 			text-align: left;
 		}
@@ -86,7 +95,8 @@
 		#about p {
 			font-family: "Kranky";
 			font-size: 440%;
-			padding-bottom: 31%;
+			height: 545px;
+			text-align: left;
 		}
 
 		#projects a {
@@ -131,7 +141,6 @@
 
 		#links img {
 			width: 10%;
-			height: 10%;
 		}
 
 		#links a {
@@ -140,7 +149,6 @@
 		}
 
 		.arrow {
-			height:16%;
 			width:8%;
 			float: right;
 			position: fixed;
@@ -154,12 +162,13 @@
 			background-size: 20px;
 			background-repeat: repeat;
 		}
-		
+
 	</style>
 	<title>Alice Jia Qi Liu</title>
 </head>
 	
 <body>
+<div id="skrollr-body">
 	<div id="nav" data-anchor-target="#about h2" data-0="visibility:hidden;" data-bottom="visibility:visible;">
         <ul>
             <li><a data-anchor-target="#about" data-bottom-top="margin-right:0%; color:rgba(255,255,255,1);" data-top="margin-right:20%; color:rgba(220,255,150,1);" data-top-bottom="margin-right:0%; color:rgba(255,255,255,1);" href="/#about">About Me</a></li>
@@ -171,20 +180,30 @@
 	</div>
 
 	<div id="name">
-		<h1 data-0="transform[bounce]:rotate(0deg)" data-500="transform[bounce]:rotate(-20deg);">Al<a href="mailto:alicejliu@berkeley.edu" target="_blank">i</a>ce</h1>
-		<h1 data-450="transform[bounce]:rotate(0deg)" data-950="transform[bounce]:rotate(20deg);">&nbsp;Jia Qi</h1>
-		<h1 data-850="margin-top:-300px;" data-1050="margin-top:0px;">&nbsp; &nbsp; Liu</h1>
+		<h1 data-0="transform[bounce]:rotate(0deg)" data-top="transform[bounce]:rotate(-20deg);">Al<a href="mailto:alicejliu@berkeley.edu" target="_blank">i</a>ce</h1>
+		<h1 data-anchor-target="h1:first-child" data-top="transform[bounce]:rotate(0deg)" data-top-bottom="transform[bounce]:rotate(20deg);">&nbsp;Jia Qi</h1>
+		<h1 data-100-bottom-top="margin-top[quadratic]:-300px;" data-bottom="margin-top:0px;">&nbsp; &nbsp; Liu</h1>
 	</div>
     
-    <div data-1150="margin-top:-300px;" data-top="margin-top:0px;" class="divider"></div>
+    <div data-300-bottom="margin-top:-300px;" data-bottom="margin-top:0px;" class="divider"></div>
 
     <div id="about">
     	<h2 data-bottom="opacity:0;" data-center="opacity:1;"> About Me </h2>
-    	<p data-bottom-top="transform:translateX(20em);" data-center="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> <img src="static/me.jpg" alt="alice"> &lt;- This is me. </p>
-    	<p data-bottom-top="transform:translateX(-30em);" data-center="transform:translateX(0em);" data-top-bottom="transform:translateX(30em)"> I built this without wearing my glasses, so excuse the <u>cool</u>ossal font. </p>
-    	<p data-bottom-top="transform:translateX(30em);" data-center="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> See what eye did there? </p>
-    	<p data-bottom-top="transform:translateX(-30em);" data-center="transform:translateX(0em);" data-top-bottom="transform:translateX(30em)"> If you would like to contact me... </p>
-    	<p data-bottom-top="transform:translateX(30em);" data-center="transform:translateX(0em);" data-top-bottom="transform:translateX(-30em)"> You might want to look into my <a>i</a>. </p>
+    	<div data-bottom-top="position:relative;right:-100%;" data-bottom="right:0%;" data-top="right:100%;"> 
+    		<img src="static/me.jpg" alt="alice"> <p> &lt;- This is me. </p>
+    	</div>
+    	<div data-bottom-top="position:relative;right:100%;" data-bottom="right:0%;" data-top="right:-100%;"> 
+    		<p> I built this without wearing my glasses, so excuse the <u>cool</u>ossal font. </p>
+    	</div>
+    	<div data-bottom-top="position:relative;right:-100%;" data-bottom="right:0%;" data-top="right:100%;"> 
+    		<p> See what eye did there? </p>
+    	</div>
+    	<div data-bottom-top="position:relative;right:100%;" data-bottom="right:0%;" data-top="right:-100%;"> 
+    		<p> If you would like to contact me... </p>
+    	</div>
+    	<div data-bottom-top="position:relative;right:-100%;" data-bottom="right:0%;" data-top="right:100%;"> 
+    		<p> You might want to look into my <a>i</a>. </p>
+    	</div>
     </div>
 
     <div class="divider"></div>
@@ -237,6 +256,7 @@
 	</div>
 
 	<img data-anchor-target="#links h2" data-0="visibility:hidden; transform:rotate(0deg);" data-center="visibility:visible; transform:rotate(180deg);" src="/static/arrow.png" alt="arrow" class="arrow" id="up">
+</div>
 
     
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -247,8 +267,22 @@
     		$("#nav").css({bottom: bottomPos});
     	}
 
+    	function animateArrow() {
+    		$("#down").animate({
+    			"margin-bottom": "+=5%"
+    		}, 500, function() {
+    			$("#down").animate({
+    			"margin-bottom": "-=5%"
+    			}, 500);
+    		});
+    	}
+
     	function Main() {
     		var s = skrollr.init();
+
+    		animateArrow();
+    		setTimeout(function(){animateArrow();},1000);
+    		setTimeout(function(){animateArrow();},2000);
 
     		repositionMenu();
 
@@ -256,12 +290,8 @@
     			repositionMenu();
     		});
 
-    		$("b").click(function() {
-    			window.location = "static/AliceJiaQi_Liu_resume.pdf";
-    		});
-
     		$("#up").click(function() {
-    			$("html,body").animate({scrollTop:0},0);
+    			$("html,body").animate({scrollTop:0},100);
     		});
         }
         
