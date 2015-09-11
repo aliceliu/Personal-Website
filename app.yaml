@@ -12,6 +12,10 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /933090e2fb03b6da782f6a6adcfc949e.txt
+  static_files: 933090e2fb03b6da782f6a6adcfc949e.txt
+  upload: 933090e2fb03b6da782f6a6adcfc949e.txt
+
 - url: .*
   script: main.app
 
